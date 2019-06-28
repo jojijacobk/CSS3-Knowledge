@@ -85,13 +85,13 @@
 - What are the different units available in CSS ?
   <img src="attachments/units.png"  width="225"> <br/>
 - Which are the CSS properties for which a unit does matter ?
-- <img src="attachments/where does unit matter.png"  width="650"> <br/>
+  <img src="attachments/where does unit matter.png"  width="650"> <br/>
 - How is size calculated ?
-- <img src="attachments/how is size calculated.png"  width="650"> <br/>
+  <img src="attachments/how is size calculated.png"  width="650"> <br/>
 
 ## How does a percentage unit work ?
 
-- <img src="attachments/how percentage is calculated.png"  width="650"> <br/>
+<img src="attachments/how percentage is calculated.png"  width="650"> <br/>
 
 - Relation of percentage unit to `position: fixed` of an element
 
@@ -116,7 +116,7 @@ While position of an element is static or relative, then value of % unit of elem
 
 ## Which unit is better fit for different CSS properties ?
 
-- <img src="attachments/units fit for different needs.png"  width="650"> <br/>
+<img src="attachments/units fit for different needs.png"  width="650"> <br/>
 
 # Making site Responsive
 
