@@ -144,3 +144,143 @@ While position of an element is static or relative, then value of % unit of elem
   ```
 - Font formats : `ttf`, `woff`, `woff2`
   check for browser support before using different font formats
+
+# Flexbox
+
+- Give flex style to a container by giving CSS
+  `display:flex`
+
+## `flex-direction`
+
+`flex-direction: row`
+
+- By default, the direction of main axis is horizontal row. All child items would act as inline-block. That means, if no width is set to child elements, they would occupy only necessary width space to fit its contents.
+- If a width is set, then it just occupies that specified width. And, all items sit on a row together left aligned.
+  <img src="attachments/flex row.png"  width="325"> <br/>
+
+`flex-direction: row-reverse`
+<img src="attachments/row-reverse.png"  width="325"> <br/>
+
+`flex-direction: column`
+
+- When the direction of main axis is set as vertical column (cross axis), then all child items would act like block elements sitting independently column wise. That means it occupies full width of the container.
+  <img src="attachments/no width, flex column.png"  width="325"> <br/>
+
+- If width is set to the child elements, they will just occupy the specified width and sit independently column wise.
+  <img src="attachments/width set, flex column.png"  width="325"> <br/>
+
+`flex-direction: column-reverse`
+<img src="attachments/column-reverse.png"  width="325"> <br/>
+
+## `justify-content`
+
+`justify-content: flex-start`
+<img src="attachments/flex-start.png"  width="325"> <br/>
+`justify-content: flex-end`
+<img src="attachments/flex-end.png"  width="325"> <br/>
+`justify-content: center`
+<img src="attachments/center.png"  width="325"> <br/>
+`justify-content: space-between`
+<img src="attachments/space-between.png"  width="325"> <br/>
+`justify-content: space-around`
+<img src="attachments/space-around.png"  width="325"> <br/>
+`justify-content: space-evenly`
+<img src="attachments/space-evenly.png"  width="325"> <br/>
+
+## `align-items`, `align-content`, `align-self`
+
+- `align-items` aligns items in vertical axis similar to how `justify-content` aligns items in horizontal axis.
+
+- `align-content`
+
+  - When `align-items` deals with items inside a flex line, `align-content` deals with the flex lines themselves.
+  - So, `align-content` property makes sense only when there are more than one rows of flex lines.
+  - `align-content` property operates on the flex lines in relation to the container.
+
+- `align-self` is used to individually address a single element for alignment in vertical axis;
+
+## `margin`
+
+```css
+.home {
+  margin: left;
+}
+```
+
+<img src="attachments/home margin-left.png"  width="325"> <br/>
+
+```css
+.pages {
+  margin: left;
+}
+```
+
+<img src="attachments/pages margin-left.png"  width="325"> <br/>
+
+```css
+.pages {
+  margin: right;
+}
+```
+
+<img src="attachments/pages margin-right.png"  width="325"> <br/>
+
+```css
+.pages {
+  margin: auto;
+}
+```
+
+<img src="attachments/pages margin-auto.png"  width="325"> <br/>
+
+**Flex property**
+
+<img src="attachments/before applying flex.png"  width="325"> <br/>
+When you apply `flex:1` to the children in above container
+
+```css
+.parent div {
+  flex: 1;
+}
+```
+
+<img src="attachments/after applying flex 1.png"  width="325"> <br/>
+
+```css
+.pages {
+  background-color: rgb(4, 128, 145);
+  flex: 1;
+}
+```
+
+<img src="attachments/pages flex 1.png"  width="325"> <br/>
+
+```css
+.home {
+  background-color: rgb(4, 128, 145);
+  flex: 1;
+}
+```
+
+<img src="attachments/home flex 1.png"  width="325"> <br/>
+
+```css
+.parent div {
+  background-color: rgb(4, 128, 145);
+  flex: 1;
+}
+.parent pages {
+  flex: 2;
+}
+```
+
+<img src="attachments/flex 1 all, but pages flex 2.png"  width="325"> <br/>
+
+## `order`
+
+`order:1`
+Default order for all elements is `0`. And, elements are arranged in the increasing order by default. You can tweak an element's order inside a flex container by using property `order: x`.
+
+## `flex-wrap`
+
+`flex-wrap:nowrap`
