@@ -174,18 +174,14 @@ While position of an element is static or relative, then value of % unit of elem
 
 ## `justify-content`
 
-`justify-content: flex-start`
-<img src="attachments/flex-start.png"  width="325"> <br/>
-`justify-content: flex-end`
-<img src="attachments/flex-end.png"  width="325"> <br/>
-`justify-content: center`
-<img src="attachments/center.png"  width="325"> <br/>
-`justify-content: space-between`
-<img src="attachments/space-between.png"  width="325"> <br/>
-`justify-content: space-around`
-<img src="attachments/space-around.png"  width="325"> <br/>
-`justify-content: space-evenly`
-<img src="attachments/space-evenly.png"  width="325"> <br/>
+| CSS                              | Visual                                                 |
+| -------------------------------- | ------------------------------------------------------ |
+| `justify-content: flex-start`    | <img src="attachments/flex-start.png"  width="325">    |
+| `justify-content: flex-end`      | <img src="attachments/flex-end.png"  width="325">      |
+| `justify-content: center`        | <img src="attachments/center.png"  width="325">        |
+| `justify-content: space-between` | <img src="attachments/space-between.png"  width="325"> |
+| `justify-content: space-around`  | <img src="attachments/space-around.png"  width="325">  |
+| `justify-content: space-evenly`  | <img src="attachments/space-evenly.png"  width="325">  |
 
 ## `align-items`, `align-content`, `align-self`
 
