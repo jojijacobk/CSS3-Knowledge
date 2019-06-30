@@ -147,10 +147,12 @@ While position of an element is static or relative, then value of % unit of elem
 
 # Flexbox
 
-- Give flex style to a container by giving CSS
+- Give flex style to a container by giving CSS. This makes a flex context for direct children inside the container.
   `display:flex`
 
-## `flex-direction`
+## Properties applied to the flex container
+
+### `flex-direction`
 
 `flex-direction: row`
 
@@ -172,7 +174,32 @@ While position of an element is static or relative, then value of % unit of elem
 `flex-direction: column-reverse`
 <img src="attachments/column-reverse.png"  width="325"> <br/>
 
-## `justify-content`
+### `flex-wrap`
+
+`flex-wrap:nowrap`
+
+### `align-content`
+
+`align-content`
+
+- When `align-items` deals with items inside a flex line, `align-content` deals with the flex lines themselves.
+- So, `align-content` property makes sense only when there are more than one rows of flex lines.
+- `align-content` property operates on the flex lines in relation to the container.
+
+<img src="attachments/align-content.png"  width="325"> <br/>
+
+### `align-items`
+
+`align-items` aligns items in vertical axis similar to how `justify-content` aligns items in horizontal axis.
+<img src="attachments/align-items.png"  width="325"> <br/>
+
+## Properties applied to the children inside a flex container
+
+### `align-self`
+
+`align-self` is used to individually address a single element for alignment in vertical axis;
+
+### `justify-content`
 
 | CSS                              | Visual                                                 |
 | -------------------------------- | ------------------------------------------------------ |
@@ -183,19 +210,7 @@ While position of an element is static or relative, then value of % unit of elem
 | `justify-content: space-around`  | <img src="attachments/space-around.png"  width="325">  |
 | `justify-content: space-evenly`  | <img src="attachments/space-evenly.png"  width="325">  |
 
-## `align-items`, `align-content`, `align-self`
-
-- `align-items` aligns items in vertical axis similar to how `justify-content` aligns items in horizontal axis.
-
-- `align-content`
-
-  - When `align-items` deals with items inside a flex line, `align-content` deals with the flex lines themselves.
-  - So, `align-content` property makes sense only when there are more than one rows of flex lines.
-  - `align-content` property operates on the flex lines in relation to the container.
-
-- `align-self` is used to individually address a single element for alignment in vertical axis;
-
-## `margin`
+### `margin`
 
 ```css
 .home {
@@ -229,7 +244,7 @@ While position of an element is static or relative, then value of % unit of elem
 
 <img src="attachments/pages margin-auto.png"  width="325"> <br/>
 
-**Flex property**
+### `flex`
 
 <img src="attachments/before applying flex.png"  width="325"> <br/>
 When you apply `flex:1` to the children in above container
@@ -272,11 +287,7 @@ When you apply `flex:1` to the children in above container
 
 <img src="attachments/flex 1 all, but pages flex 2.png"  width="325"> <br/>
 
-## `order`
+### `order`
 
 `order:1`
 Default order for all elements is `0`. And, elements are arranged in the increasing order by default. You can tweak an element's order inside a flex container by using property `order: x`.
-
-## `flex-wrap`
-
-`flex-wrap:nowrap`
