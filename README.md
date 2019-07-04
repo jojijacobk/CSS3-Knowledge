@@ -126,6 +126,10 @@ While position of an element is static or relative, then value of % unit of elem
 2. Secondly, add media queries to adjust CSS (including layout, color etc) according to device size.
    Mobile first design approach means you develop for mobile at first, and enhance your CSS using media queries to consider larger devices inlcuding desktops.
 
+- Reference for common dimensions used in media query :
+  - https://gist.github.com/jojijacobk/b3f914f9e21fb7df6edb5039a8930a00
+  - https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
 # Fonts
 
 <img src="attachments/font-families.png"  width="625"> <br/>
@@ -291,3 +295,52 @@ When you apply `flex:1` to the children in above container
 
 `order:1`
 Default order for all elements is `0`. And, elements are arranged in the increasing order by default. You can tweak an element's order inside a flex container by using property `order: x`.
+
+# Grid
+
+## Properties applied to grid container
+
+- To make an element a grid container, and its direct children as grid items:
+  `display: grid;`
+
+- To configure number of columns / rows in grid
+  `grid-template-columns: 1fr 1fr auto 10% 150px 5em 1fr;`
+  `grid-template-rows: repeat(5,1fr 3fr);`
+
+- To specify gap between grid columns / rows
+  `grid-column-gap: 1em`
+  `grid-row-gap: 1em`
+  `grid-gap: 1em`
+
+- To specify width / height of grid columns / rows
+  `grid-auto-rows: 100px` this fixes rows height to 100px
+  `grid-auto-columns: 100px` this fixes columns width to 100px
+  `grid-auto-rows: minmax(100px, auto)` this gives minimum of 100px height to a row, and then row height grows according to the content.
+
+- To align items horizontally
+  `justify-items: start | end | center | stretch`;
+  To do the same from grid items
+  `justify-self: start | end | center | stretch`;
+
+## Properties applied to a grid item
+
+- To align items vertically
+  `align-items: start | end | center | stretch`;
+  To do the same from grid items
+  `align-self: start | end | center | stretch`;
+
+- To specify the grid cell in which a grid item should appear
+  `grid-column-start:1` & `grid-column-end:3`. If only `-start` is given, it assumes one cell.
+  `grid-row-start:3` & `grid-row-end:4`
+  You can also specifying `-end` by giving span of cells like:
+  `grid-column-end: span 4` which means the grid column expands to 4 columns
+
+- Shortcut for above usage
+  `grid-row: <start-line> / <end-line>;`
+  `grid-column: <start-line> / <end-line>;`
+
+- Shortcut for above usage to specify size as a grid area
+  `grid-area: x1/y1/x2/y2;`
+
+- order. By default grid item order is in the order by which grid item appears in source.
+  `order: 3`
