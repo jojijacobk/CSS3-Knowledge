@@ -33,7 +33,7 @@
 
 # Selectors
 
-## Specificity
+## Specificity Hierarchy
 
 <img src="attachments/specificity.png" width="300"> <br/>
 
