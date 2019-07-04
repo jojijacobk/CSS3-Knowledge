@@ -189,7 +189,7 @@ Here, _Unknown_ font is not available in user's computer, hence browser checks i
 
 ## Properties that can be applied to a flex container
 
-### `flex-direction`
+**`flex-direction`**
 
 `flex-direction: row`
 
@@ -217,13 +217,13 @@ If width is set to the child elements, they will just occupy the specified width
 
 <img src="attachments/column-reverse.png"  width="325"> <br/>
 
-### `flex-wrap`
+**`flex-wrap`**
 
 `flex-wrap:wrap`
 
 `flex-wrap:nowrap`
 
-### `align-content`
+**`align-content`**
 
 `align-content`
 
@@ -235,7 +235,7 @@ So, `align-content` property makes sense only when there are more than one rows 
 
 <img src="attachments/align-content.png"  width="325"> <br/>
 
-### `align-items`
+**`align-items`**
 
 `align-items` aligns items in vertical axis similar to how `justify-content` aligns items in horizontal axis.
 
@@ -243,11 +243,11 @@ So, `align-content` property makes sense only when there are more than one rows 
 
 ## Properties that can be applied to children inside a flex container
 
-### `align-self`
+**`align-self`**
 
 `align-self` is used to individually address a single element for alignment in vertical axis;
 
-### `justify-content`
+**`justify-content`**
 
 | CSS                              | Visual                                                 |
 | -------------------------------- | ------------------------------------------------------ |
@@ -258,7 +258,7 @@ So, `align-content` property makes sense only when there are more than one rows 
 | `justify-content: space-around`  | <img src="attachments/space-around.png"  width="325">  |
 | `justify-content: space-evenly`  | <img src="attachments/space-evenly.png"  width="325">  |
 
-### `margin`
+**`margin`**
 
 ```css
 .home {
@@ -292,7 +292,7 @@ So, `align-content` property makes sense only when there are more than one rows 
 
 <img src="attachments/pages margin-auto.png"  width="325"> <br/>
 
-### `flex`
+**`flex`**
 
 ```css
 .parent div {
@@ -332,7 +332,7 @@ So, `align-content` property makes sense only when there are more than one rows 
 
 <img src="attachments/flex 1 all, but pages flex 2.png"  width="325"> <br/>
 
-### `order`
+**`order`**
 
 `order:1`
 
