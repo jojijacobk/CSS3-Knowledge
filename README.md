@@ -227,11 +227,13 @@ If width is set to the child elements, they will just occupy the specified width
 
 `align-content`
 
-- When `align-items` deals with items inside a flex line, `align-content` deals with the flex lines themselves.
-- So, `align-content` property makes sense only when there are more than one rows of flex lines.
-- `align-content` property operates on the flex lines in relation to the container.
+When `align-items` deals with items inside a flex line, `align-content` deals with the flex lines themselves.
 
-  <img src="attachments/align-content.png"  width="325"> <br/>
+So, `align-content` property makes sense only when there are more than one rows of flex lines.
+
+`align-content` property operates on the flex lines in relation to the container.
+
+<img src="attachments/align-content.png"  width="325"> <br/>
 
 ### `align-items`
 
