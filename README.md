@@ -196,7 +196,7 @@ Here, _Unknown_ font is not available in user's computer, hence browser checks i
 - By default, the direction of main axis is horizontal row. All child items would act as inline-block. That means, if no width is set to child elements, they would occupy only necessary width space to fit its contents.
 - If a width is set, then it just occupies that specified width. And, all items sit on a row together left aligned.
 
-  <img src="attachments/flex row.png"  width="325"> <br/>
+<img src="attachments/flex row.png"  width="325"> <br/>
 
 `flex-direction: row-reverse`
 
@@ -206,14 +206,13 @@ Here, _Unknown_ font is not available in user's computer, hence browser checks i
 
 - When the direction of main axis is set as vertical column (cross axis), then all child items would act like block elements sitting independently column wise. That means it occupies full width of the container.
 
-  <img src="attachments/no width, flex column.png"  width="325"> <br/>
+<img src="attachments/no width, flex column.png"  width="325"> <br/>
 
 - If width is set to the child elements, they will just occupy the specified width and sit independently column wise.
 
-  <img src="attachments/width set, flex column.png"  width="325"> <br/>
+<img src="attachments/width set, flex column.png"  width="325"> <br/>
 
 `flex-direction: column-reverse`
-
 <img src="attachments/column-reverse.png"  width="325"> <br/>
 
 ### `flex-wrap`
