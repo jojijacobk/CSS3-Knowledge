@@ -225,9 +225,7 @@ If width is set to the child elements, they will just occupy the specified width
 
 **`align-content`**
 
-`align-content`
-
-When `align-items` deals with items inside a flex line, `align-content` deals with the flex lines themselves.
+`align-content` deals with the flex lines themselves, whereas `align-items` deals with items inside a flex line.
 
 So, `align-content` property makes sense only when there are more than one rows of flex lines.
 
