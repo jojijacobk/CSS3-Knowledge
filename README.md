@@ -347,18 +347,23 @@ Default order for all elements is `0`. And, elements are arranged in the increas
 - To configure number of columns / rows in grid
 
   `grid-template-columns: 1fr 1fr auto 10% 150px 5em 1fr;`
+  
   `grid-template-rows: repeat(5,1fr 3fr);`
 
 - To specify gap between grid columns / rows
 
   `grid-column-gap: 1em`
+  
   `grid-row-gap: 1em`
+  
   `grid-gap: 1em`
 
 - To specify width / height of grid columns / rows
 
   `grid-auto-rows: 100px` this fixes rows height to 100px
+  
   `grid-auto-columns: 100px` this fixes columns width to 100px
+  
   `grid-auto-rows: minmax(100px, auto)` this gives minimum of 100px height to a row, and then row height grows according to the content.
 
 - To align items horizontally
@@ -382,6 +387,7 @@ Default order for all elements is `0`. And, elements are arranged in the increas
 - To specify the grid cell in which a grid item should appear
 
   `grid-column-start:1` & `grid-column-end:3`. If only `-start` is given, it assumes one cell.
+  
   `grid-row-start:3` & `grid-row-end:4`
 
 - You can also specifying `-end` by giving span of cells like:
@@ -391,6 +397,7 @@ Default order for all elements is `0`. And, elements are arranged in the increas
 - Shortcut for above usage
 
   `grid-row: <start-line> / <end-line>;`
+  
   `grid-column: <start-line> / <end-line>;`
 
 - Shortcut for above usage to specify size as a grid area
