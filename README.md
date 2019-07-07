@@ -392,7 +392,7 @@ Default order for all elements is `0`. And, elements are arranged in the increas
 
 - Shortcut for above usage to specify size as a grid area
 
-  `grid-area: x1/y1/x2/y2;`
+  `grid-area: row-start-line/column-start-line/row-end-line/column-end-line;`
 
 - order. By default grid item order is in the order by which grid item appears in source.
 
