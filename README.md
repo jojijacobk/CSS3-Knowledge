@@ -366,10 +366,9 @@ Default order for all elements is `0`. And, elements are arranged in the increas
 
 ## Properties that can be applied to a grid item
 
-  - To align items horizontally 
+- To align items horizontally 
 
   `justify-self: start | end | center | stretch`;
-
 
 - To align items vertically
 
