@@ -370,17 +370,18 @@ Default order for all elements is `0`. And, elements are arranged in the increas
 
   `justify-items: start | end | center | stretch`;
 
-- To do the same from grid items
-
-  `justify-self: start | end | center | stretch`;
-
-## Properties that can be applied to a grid item
-
 - To align items vertically
 
   `align-items: start | end | center | stretch`;
 
-- To do the same from grid items
+## Properties that can be applied to a grid item
+
+  - To align items horizontally 
+
+  `justify-self: start | end | center | stretch`;
+
+
+- To align items vertically
 
   `align-self: start | end | center | stretch`;
 
